@@ -14,3 +14,4 @@ Main features:
 - event delegation
 - javascript classes
 - localstorage
+ 
