@@ -11,6 +11,7 @@ Main features:
 - bootstrap 5
 - parcel
 - 3rd party libraries
+- prototypal inheritance
 - event delegation
 - javascript classes
 - localstorage
