@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.task {
+  color: blue;
+}
+
+body {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+input[type='radio'] {
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+}
+
+label {
+  margin-left: 20px;
+}
+.done {
+  background-color: lightgreen;
+  opacity: 70%;
+}
+.list-group-item {
+  background: none !important;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.main {
+  margin-top: 12rem;
+}
+
+.btns--container {
+  text-align: right !important;
+  padding: 0px !important;
+  padding-top: 0px !important;
+}
+
+.done-label {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.check--imput {
+  margin-right: 0px !important;
+}
+
+@media (max-width: 876px) {
+  .btns--container {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 876px) {
+  .responsive-content {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 876px) {
+  .form-check-label {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 876px) {
+  .done--label {
+    margin-left: 0px !important;
+  }
+}

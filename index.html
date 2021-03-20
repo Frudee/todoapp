@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script defer type="module" src="/script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>To do app</title>
+  </head>
+  <body class="">
+    <section class="main">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-9 text-center">
+            <!-- Btns container -->
+            <div class="btns-container row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 col-12">
+                <h1 class="">What are you up to?</h1>
+              </div>
+              <div
+                class="col-md-3 col-12 text-right btns--container align-self-end"
+              >
+                <button
+                  type="button"
+                  class="btn mb-1 mb-sm-2 btn-dark responsive-content"
+                  id="clear-button"
+                >
+                  Home
+                </button>
+                <button
+                  type="button"
+                  class="btn mb-1 mb-sm-2 btn-dark responsive-content"
+                  id="save-button"
+                >
+                  Save
+                </button>
+                <!-- Dropdown -->
+                <div class="dropdown d-inline">
+                  <button
+                    type="button"
+                    class="btn btn-dark dropdown-toggle mb-1 mb-sm-2 responsive-content"
+                    data-bs-toggle="dropdown"
+                    id="list-button"
+                  >
+                    My lists
+                  </button>
+                  <ul
+                    class="dropdown-menu my-lists"
+                    aria-labelledby="dropdownMenuButton1"
+                  ></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Radios -->
+            <div class="">
+              <div class="radio-select mt-3 mb-2 row fs-4">
+                <form action="#" name="demo">
+                  <label for="tasks" class=""
+                    >Plans<input
+                      type="radio"
+                      class="activity form-check-input"
+                      id="tasks"
+                      name="activity"
+                      value="tasks"
+                  /></label>
+
+                  <label class="" for="shopping">Shopping</label
+                  ><input
+                    class="activity form-check-input"
+                    type="radio"
+                    id="shopping"
+                    name="activity"
+                    value="shopping"
+                  />
+                </form>
+              </div>
+            </div>
+            <!-- Input field + add btn-->
+            <div class="">
+              <div class="input-field mb-2 mt-2 row justify-content-between">
+                <div class="col-8">
+                  <input
+                    type="text"
+                    id="input-field"
+                    class="form-control"
+                    placeholder="Enter your listing"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="col-4 btn btn-block btn-primary"
+                  id="add-button"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+            <!-- Listings container -->
+            <div class="">
+              <div class="tasks-container text-center">
+                <div class="container-listings">
+                  <!-- <div class="row done listings-header ">
+                    <div class="col-1  list-group-item">№</div>
+                    <div class="col-7  list-group-item">Listing</div>
+                    <div class="col-1  list-group-item">Qty</div>
+                    <div class=" col-2   list-group-item">
+                      <input class="form-check-input  check--input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Done
+                      </label>
+                    </div>
+                    <div class="col-1  list-group-item"><button type="button" class="btn-close"  aria-label="Close"></div>
+                  </div> -->
+                  <!-- <div class="row listings-example shopping-listing ">
+                <div class="col-1 bg-info">1</div>
+                <div class="col-8 bg-danger">Milk</div>
+                <input class="col-2" type="number">
+                <div class="col-1 bg-info"><button type="button" class="btn-close"  aria-label="Close"></div>
+              </div>
+              <div class="row listings-example task-listing">
+                <div class="col-1 bg-info">1</div>
+                <div class="col-10 bg-secondary">Do homework</div>
+                <div class="col-1 bg-info"><button type="button" class="btn-close"  aria-label="Close"></div>
+              </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row justify-content-center text-center">
+      <div class="row col-4 bg-warning"></div>
+
+      <!-- <div class="task-item">Example task</div> -->
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse"
+      id="navbarTogglerDemo03"
+    >
+      <ul class="navbar-nav me-auto mb-lg-0">
+        <li class="nav-item">
+          <button
+            type="button"
+            class="btn mb-3 btn-dark"
+            id="clear-button"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            type="button"
+            class="btn mb-3 btn-dark"
+            id="save-button"
+          >
+            Save
+          </button>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown d-inline">
+            <button
+              type="button"
+              class="btn btn-dark dropdown-toggle mb-3"
+              data-bs-toggle="dropdown"
+              id="list-button"
+            >
+              My lists
+            </button>
+            <ul
+              class="dropdown-menu my-lists"
+              aria-labelledby="dropdownMenuButton1"
+            ></ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
